@@ -7,8 +7,8 @@ function test_input($data) {
 
 $host = "localhost";
 $username = "root";
-$password = "";
-$dbname = "web_db";
+$password = "PHR@17parva";
+$dbname = "nexxbuy";
 
 $conn = new mysqli($host, $username, $password, $dbname);
 if ($conn->connect_error) {
