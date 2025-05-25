@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    $conn = new mysqli("localhost", "root", "", "web_db");
+    $conn = new mysqli("localhost", "root", "PHR@17parva", "nexbuy");
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
