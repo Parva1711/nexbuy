@@ -113,11 +113,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['place_order'])) {
 
     <form method="post">
       <h3>Shipping Details</h3>
+
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required>
 
       <label for="email">Email Address</label>
       <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
 
       <label for="address">Shipping Address</label>
       <textarea id="address" name="address" rows="3" required></textarea>
